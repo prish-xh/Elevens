@@ -1,0 +1,304 @@
+{
+  "tests": [
+    {
+      "name": "Test Cases Not Changed ",
+      "setup": "git fetch --unshallow --update-head-ok origin '+refs/heads/*:refs/heads/*'",
+      "run": "[ -z \"$(git log feedback..main ./test/*)\" ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Card Constructor",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardConstructor",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Card getSuit",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardGetSuit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Card getRank",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardGetRank",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Card getPointValue",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardGetPointValue",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Card equals",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardEquals1of2 --tests Activity1Test.testCardEquals2of2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Card toString",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testCardToString1 --tests Activity1Test.testCardToString2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Deck Constructor",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testDeck",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Deck isEmpty",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testDeckIsEmpty1of2 --tests Activity1Test.testDeckIsEmpty2of2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Deck getSize",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testDeckGetSize1of2 --tests Activity1Test.testDeckGetSize2of2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Deck deal",
+      "setup": "",
+      "run": "gradle test --tests Activity1Test.testDeckDeal1of4 --tests Activity1Test.testDeckDeal2of4 --tests Activity1Test.testDeckDeal3of4 --tests Activity1Test.testDeckDeal4of4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Shuffler perfectShuffle",
+      "setup": "",
+      "run": "gradle test --tests Activity2Test.testShufflerPerfectShuffle1of2 --tests Activity2Test.testShufflerPerfectShuffle2of2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Shuffler selectionShuffle",
+      "setup": "",
+      "run": "gradle test --tests Activity2Test.testShufflerSelectionShuffle1of2 --tests Activity2Test.testShufflerSelectionShuffle2of2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Deck shuffle",
+      "setup": "",
+      "run": "gradle test --tests Activity2Test.testDeckShuffle",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard constructor",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sConstructorDeckSize --tests Activity3Test.test11sConstructor --tests Activity3Test.test11sConstructor2 --tests Activity3Test.test11sConstructorDeal",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard  isLegal pair11",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sContainsPairSum11_1_of5 --tests Activity3Test.test11sContainsPairSum11_2_of5 --tests Activity3Test.test11sContainsPairSum11_3_of5 --tests Activity3Test.test11sContainsPairSum11_4_of5 --tests Activity3Test.test11sContainsPairSum11_5_of5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ElevensBoard  isLegal JQK",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sIsLegal_JQK_1_of4 --tests Activity3Test.test11sIsLegal_JQK_2_of4 --tests Activity3Test.test11sIsLegal_JQK_3_of4 --tests Activity3Test.test11sIsLegal_JQK_4_of4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ElevensBoard  anotherPlayIsPossible",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sAnotherPlayIsPossible",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ElevensBoard  containsPairSum11",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sContainsPairSum11_1_of5 --tests Activity3Test.test11sContainsPairSum11_2_of5 --tests Activity3Test.test11sContainsPairSum11_3_of5 --tests Activity3Test.test11sContainsPairSum11_4_of5 --tests Activity3Test.test11sContainsPairSum11_5_of5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard  containsJQK",
+      "setup": "",
+      "run": "gradle test --tests Activity3Test.test11sContainsJQK_1_of_4 --tests Activity3Test.test11sContainsJQK_2_of_4 --tests Activity3Test.test11sContainsJQK_3_of_4 --tests Activity3Test.test11sContainsJQK_4_of_4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ThirteensBoard  Constructor",
+      "setup": "",
+      "run": "gradle test --tests Activity4Test.test13sConstructor_Size --tests Activity4Test.testConstructor_Deal --tests Activity4Test.testDeckConstructor_Size",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ThirteensBoard  isLegal",
+      "setup": "",
+      "run": "gradle test --tests Activity4Test.test13sIsLegal_K_1_of_2 --tests Activity4Test.test13sIsLegal_K_2_of_2 --tests Activity4Test.test13sIsLegal_PairSum13_1_of_3 --tests Activity4Test.test13sIsLegal_PairSum13_2_of_3 --tests Activity4Test.test13sIsLegal_PairSum13_3_of_3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ThirteensBoard  anotherPlayIsPossible",
+      "setup": "",
+      "run": "gradle test --tests Activity4Test.test13sAnotherPlayIsPossible",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ThirteensBoard  containsPairSum13",
+      "setup": "",
+      "run": "gradle test --tests Activity4Test.test13sContainsPairSum13_1_of_2 --tests Activity4Test.test13sContainsPairSum13_2_of_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ThirteensBoard  containsK",
+      "setup": "",
+      "run": "gradle test --tests Activity4Test.test13sContainsK_1_of_2 --tests Activity4Test.test13sContainsK_2_of_2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ElevensBoard   playIfPossible",
+      "setup": "",
+      "run": "gradle test --tests Activity5Test.testPlayIfPossible",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard   playPairSum11IfPossible",
+      "setup": "",
+      "run": "gradle test --tests Activity5Test.testPlaySum11IfPossible",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard  playJQKIfPossible",
+      "setup": "",
+      "run": "gradle test --tests Activity5Test.testPlayJQKIfPossible",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "ElevensBoard findPairSum11",
+      "setup": "",
+      "run": "gradle test --tests Activity5Test.test11sFindPairSum11_1_of4 --tests Activity5Test.test11sFindPairSum11_2_of4 --tests Activity5Test.test11sFindPairSum11_3_of4 --tests Activity5Test.test11sFindPairSum11_1_of4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "ElevensBoard findJQK",
+      "setup": "",
+      "run": "gradle test --tests Activity5Test.test11sFindJQK_1_of_4 --tests Activity5Test.test11sFindJQK_2_of_4 --tests Activity5Test.test11sFindJQK_3_of_4 --tests Activity5Test.test11sFindJQK_4_of_4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
