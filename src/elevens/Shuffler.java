@@ -52,7 +52,26 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN Activity 2 *** */
+		int[] done = new int[values.length];
+		
+
+          int i = 0;
+          for(int j = 0; j < (values.length+1)/2; j++) {
+                 done[i] = values[j];
+                 i +=2;
+          }
+          i=1;
+          for(int y = (values.length+1)/2; y < values.length; y++) {
+                 done[i] = values[y];
+                 i +=2;
+          }
+          for (int k = 0; k < done.length; k++) {
+                 values[k] = done[k];
+               
+          }
 	}
+
+
 
 	/**
 	 * Apply an "efficient selection shuffle" to the argument.
@@ -67,5 +86,14 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN Activity 2 *** */
+		 for(int i = values.length-1; i>=0; i--) {
+
+             int place = (int)Math.random() * i;
+             int temp = values[place];
+             values[place] = values[i];
+             values[i] = temp;
+      }
+
+     
 	}
 }
